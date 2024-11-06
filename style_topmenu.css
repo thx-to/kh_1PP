@@ -1,0 +1,130 @@
+.menu_bar {
+  box-sizing: border-box;
+  width: 230px;
+  height: 1080px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  display: flex;
+  background: #FFFFFF;
+  border-right: 1px solid #000000;
+}
+
+.menu_logo {
+  position: absolute;
+  left: 9.57%;
+  right: 10%;
+  top: 2.5%;
+  bottom: 84.26%;
+  background: url('IMG/menu_logo.png');
+  background-size: 185px 143px;
+}
+
+/* 상단 메인 메뉴 */
+
+.menu_main_imaon {
+  position: absolute;
+  left: 4.35%;
+  right: 4.78%;
+  top: 19.07%;
+  bottom: 78.15%;
+}
+
+.menu_main_membership {
+  position: absolute;
+  left: 4.35%;
+  right: 4.78%;
+  top: 22.31%;
+  bottom: 74.91%;
+}
+
+.menu_main_ce {
+  position: absolute;
+  left: 4.35%;
+  right: 4.78%;
+  top: 25.56%;
+  bottom: 71.67%;
+}
+.menu_main_search {
+  position: absolute;
+  left: 4.35%;
+  right: 4.78%;
+  top: 28.8%;
+  bottom: 68.43%;
+}
+
+.menu_main_box {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  display: flex;
+  border-radius: 30px;
+}
+
+.menu_main_btn {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 12%;
+  bottom: 12.49%;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+/* 중앙 SNS 메뉴 */
+
+.menu_sns_box {
+  position: absolute;
+  width: 205px;
+  height: 37px;
+  left: 5.22%;
+  right: 5.65%;
+  top: 33.06%;
+  bottom: 63.52%;
+  display: flex;  /* Flexbox로 설정 */
+  justify-content: space-between;  /* 아이콘들 간격을 균등하게 배치 */
+  align-items: center;  /* 수직 중앙 정렬 */
+}
+
+.menu_sns_instagram,
+.menu_sns_twitter,
+.menu_sns_youtube,
+.menu_sns_store,
+.menu_sns_mail {
+  width: 37px;  /* 아이콘 크기 */
+  height: 37px;  /* 아이콘 크기 */
+  background-size: cover;  /* 이미지 크기 맞추기 */
+  background-color: #FFFFFF;
+}
+
+.menu_sns_instagram {
+  background-image: url('IMG/menu_sns_instagram.svg?');
+}
+
+.menu_sns_twitter {
+  background-image: url('IMG/menu_sns_twitter.svg');
+}
+
+.menu_sns_youtube {
+  background-image: url('IMG/menu_sns_youtube.svg');
+}
+
+.menu_sns_store {
+  background-image: url('IMG/menu_sns_store.svg');
+}
+
+.menu_sns_mail {
+  background-image: url('IMG/menu_sns_mail.svg');
+}

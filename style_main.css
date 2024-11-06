@@ -1,0 +1,12 @@
+* {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  overflow-y: scroll;
+  background: #ffffff;
+  border: 1px solid black; /* 디버깅 */
+}
