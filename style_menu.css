@@ -1,5 +1,6 @@
 .MENUBAR {
   position: fixed;
+  display: none;
   left: 0px;
   top: 0px;
   width: 229px;
@@ -9,54 +10,76 @@
   z-index: 10;
 }
 
-#MENU_OPEN_BUTTON {
+#MENU_OPEN_BUTTON_BOX {
   display: none;
-  position: absolute;
-  left: calc(100vw - 50px);
+  background-color: white;
+  border: 1px solid black;
   top: 10px;
   width: 40px;
   height: 40px;
+  position: fixed;
+  left: calc(100vw - 50px);
   text-align: center;
-  font-size: 35px;
-  background-color: white;
-  border: 1px solid black;
+  cursor: pointer;
+  z-index: 10;
+}
+#MENU_OPEN_BUTTON {
+  display: none;
+  margin: auto;
+  font-size: 31px;
+  font-weight: 100;
+  line-height: 40px;
+  background-color: transparent; /* 배경 투명 */
+  border: none; /* 버튼 자체의 테두리 제거 */
+  transition: transform 0.3s ease;
   cursor: pointer;
   z-index: 10;
 }
 
+@media (min-width: 981px) {
+  #MENUBAR {
+    display: block;
+  }
+  #MENU_OPEN_BUTON_BOX {
+    display: none;
+  }
+  #MENU_OPEN_BUTTON {
+    display: none;
+  }
+}
+
 @media (max-width: 980px) {
-  
   .open .MENUBAR {
     display: block;
     width: 50vw;
   }
-
-  #MENU_SUB_BACKBOX {
-    width: 50vw;
+  .open #MENU_SUB {
+    top: -23px;
   }
-  #MENU_SUB_EXHIBITIONS,
-  #MENU_SUB_PROGRAMS,
-  #MENU_SUB_ARCHIVES,
-  #MENU_SUB_VISIT,
-  #MENU_SUB_ABOUT,
-  #MENU_SUB_NOTICE {
+  .open #MENU_SUB_EXHIBITIONS,
+  .open #MENU_SUB_PROGRAMS,
+  .open #MENU_SUB_ARCHIVES,
+  .open #MENU_SUB_VISIT,
+  .open #MENU_SUB_ABOUT,
+  .open #MENU_SUB_NOTICE {
     width: calc(50vw - 20px);
   }
-  #MENU_SUB_MYACCOUNT {
+  .open #MENU_SUB_MYACCOUNT {
     width: calc(50vw - 10px);
+  }
+  .open #MENU_TOP_SNS {
+    top: 93vh;
+    z-index: 20;
+  }
+  .open #MENU_OPEN_BUTTON {
+    transform: rotate(45deg);
   }
   #MENU_LOGO,
   #MENU_TOP {
     display: none;
   }
-  #MENU_SUB {
-    top: -23px;
-    left: 0;
-  }
-  #MENU_TOP_SNS {
-    top: calc(100vh - 45px);
-  }
-  #MENU_OPEN_BUTTON {
+  #MENU_OPEN_BUTTON,
+  #MENU_OPEN_BUTTON_BOX {
     display: block;
   }
 }
@@ -334,6 +357,8 @@
   font-size: 18.9px;
   font-weight: 400;
   cursor: pointer;
+  align-items: center;
+  line-height: 35px;
 }
 
 .MENU_SUB_MORE {

@@ -11,14 +11,19 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <div class="CONTAINER_MAIN">
+      <div id="MENU_OPEN_BUTTON_BOX">
+        <button id="MENU_OPEN_BUTTON">+</button>
+      </div>
 
-      <div class="MENU_OPEN_BUTTON" id="MENU_OPEN_BUTTON">+</div>
-      <div class="MENUBAR">
+      <div class="MENUBAR" id="MENUBAR">
         <img
           class="MENU_LOGO"
           style="
@@ -29,7 +34,9 @@
             position: absolute;
             cursor: pointer;
           "
-          src="IMG/menu_logo.png" onclick="location.href='index.html'" id="MENU_LOGO"
+          src="IMG/menu_logo.png"
+          onclick="location.href='index.html'"
+          id="MENU_LOGO"
         />
         <div class="MENU_TOP" id="MENU_TOP">
           <div class="MENU_TOP_IMAON">IMA ON</div>
@@ -38,7 +45,10 @@
           <div class="MENU_TOP_SEARCH">Search</div>
         </div>
         <div class="MENU_TOP_SNS" id="MENU_TOP_SNS">
-          <div class="MENU_TOP_SNS_INSTA" onclick="window.open('https://www.instagram.com/ilminmuseumofart/')">
+          <div
+            class="MENU_TOP_SNS_INSTA"
+            onclick="window.open('https://www.instagram.com/ilminmuseumofart/')"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="37"
@@ -65,7 +75,10 @@
               </g>
             </svg>
           </div>
-          <div class="MENU_TOP_SNS_TWITTER" onclick="window.open('https://x.com/ilminart')">
+          <div
+            class="MENU_TOP_SNS_TWITTER"
+            onclick="window.open('https://x.com/ilminart')"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="37"
@@ -90,7 +103,10 @@
               </g>
             </svg>
           </div>
-          <div class="MENU_TOP_SNS_YTB" onclick="window.open('https://www.youtube.com/channel/UCgJtfBNXfId2ArIE_ynfoVA')">
+          <div
+            class="MENU_TOP_SNS_YTB"
+            onclick="window.open('https://www.youtube.com/channel/UCgJtfBNXfId2ArIE_ynfoVA')"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="37"
@@ -115,7 +131,10 @@
               </g>
             </svg>
           </div>
-          <div class="MENU_TOP_SNS_STORE" onclick="window.open('https://smartstore.naver.com/imadesignstore')">
+          <div
+            class="MENU_TOP_SNS_STORE"
+            onclick="window.open('https://smartstore.naver.com/imadesignstore')"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="37"
@@ -148,7 +167,10 @@
               </g>
             </svg>
           </div>
-          <div class="MENU_TOP_SNS_MAIL" onclick="window.open('https://page.stibee.com/subscriptions/139105')">
+          <div
+            class="MENU_TOP_SNS_MAIL"
+            onclick="window.open('https://page.stibee.com/subscriptions/139105')"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="37"
@@ -211,23 +233,29 @@
             <div class="MENU_SUB_MORE">+</div>
           </div>
           <div class="MENU_SUB_NOTICE" id="MENU_SUB_NOTICE">Notice</div>
-          <div class="MENU_SUB_MYACCOUNT" onclick="location.href='myaccount.html'" id="MENU_SUB_MYACCOUNT">My Account
+          <div
+            class="MENU_SUB_MYACCOUNT"
+            onclick="location.href='myaccount.html'"
+            id="MENU_SUB_MYACCOUNT"
+          >
+            My Account
             <img
               class="MENU_SUB_MYACCOUNT_ICON"
               style="
                 width: 16px;
                 height: 17.92px;
                 right: 10px;
-                top: 8px;
+                top: 12px;
                 position: absolute;
               "
               src="IMG/menu_myaccount.png"
             />
-          </div> <!-- MY ACCOUNT -->
-        </div> <!-- MENU_SUB -->
-
-      </div> <!-- MENUBAR -->
-
+          </div>
+          <!-- MY ACCOUNT -->
+        </div>
+        <!-- MENU_SUB -->
+      </div>
+      <!-- MENUBAR -->
 
       <div class="MAIN">
         <div class="MAIN_BOX">
@@ -275,7 +303,7 @@
         <div id="POPUP1">
           <div class="POPUP_TITLE">Current Program</div>
           <div class="POPUP_TEXT">
-            역자후기 31: 히샴 마타르<br>『시에나에서의 한 달』
+            역자후기 31: 히샴 마타르<br />『시에나에서의 한 달』
           </div>
           <div
             class="POPUP_CLOSE"
@@ -320,22 +348,27 @@
             style="width: 22.5px; left: 7px; bottom: 7px; position: absolute"
             src="IMG/popup_arrow.png"
           />
-        </div> <!-- POPUP3 -->
+        </div>
+        <!-- POPUP3 -->
       </div>
       <!-- MAIN -->
     </div>
     <!-- PC_CONTAINER-->
 
     <script>
-            
-      document.addEventListener('DOMContentLoaded', function() {
-        // 메뉴 버튼 클릭 시 메뉴 토글
-        document.getElementById("MENU_OPEN_BUTTON").addEventListener("click", function() {
-          document.body.classList.toggle("open");  // 'open' 클래스를 토글하여 메뉴를 보이거나 숨김
+      document
+        .getElementById("MENU_OPEN_BUTTON")
+        .addEventListener("click", function () {
+          // open 클래스를 body에 토글하여 메뉴 열기/닫기
+          document.body.classList.toggle("open");
+
+          // 버튼 텍스트 설정
+          if (document.body.classList.contains("open")) {
+            this.style.transform = "rotate(45deg)"; // 열렸을 때 X 형태로 회전
+          } else {
+            this.style.transform = "rotate(0deg)"; // 닫혔을 때 + 형태로 복구
+          }
         });
-      });
-
     </script>
-
   </body>
 </html>

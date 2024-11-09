@@ -15,6 +15,10 @@
   <body>
 
   <div class="CONTAINER_SUB">
+
+    <div id="MENU_OPEN_BUTTON_BOX">
+      <button id="MENU_OPEN_BUTTON">+</button>
+    </div>
     <div class="MENUBAR">
       <img
       class="MENU_LOGO"
@@ -216,7 +220,7 @@
               width: 16px;
               height: 17.92px;
               left: 202px;
-              top: 8px;
+              top: 12px;
               position: absolute;
             "
             src="IMG/menu_myaccount.png"
@@ -288,5 +292,22 @@
       </div> <!-- SUB_MAIN -->
 
     </div> <!-- PC_CONTAINER-->
+
+    <script>
+
+      document.getElementById("MENU_OPEN_BUTTON").addEventListener("click", function () {
+        // open 클래스를 body에 토글하여 메뉴 열기/닫기
+        document.body.classList.toggle("open");
+
+        // 버튼 텍스트 설정
+        if (document.body.classList.contains("open")) {
+          this.style.transform = "rotate(45deg)"; // 열렸을 때 X 형태로 회전
+        } else {
+          this.style.transform = "rotate(0deg)";   // 닫혔을 때 + 형태로 복구
+        }
+      });
+
+    </script>
+
   </body>
 </html>
