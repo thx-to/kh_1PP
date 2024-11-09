@@ -173,17 +173,28 @@
   width: 90%;
   padding: 2px;
   color: white;
+  font-family: "Noto Sans KR";
   background-color: black; /* input 배경색 */
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
 }
-
+#MENU_TOP_SEARCH_INPUT:focus {
+  outline: none;
+  font-family: "Noto Sans KR";
+}
 #MENU_TOP_SEARCH_ICON {
   display: none;
   position: absolute;
-  width: 15px;
-  height: 15px;
-  right: 10px;
-  top: 2px;
+  width: 14px;
+  height: 14px;
+  right: 7px;
+  top: 7px;
   background-image: url("IMG/menu_searchbtn.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .MENU_TOP_IMAON:hover,
 .MENU_TOP_MEMBERSHIP:hover,
