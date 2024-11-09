@@ -1,0 +1,207 @@
+.PC_CONTAINER_SUB {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-width: 980px;
+  max-width: 1920px;
+  height: 100vh;
+  position: relative;
+  background: white;
+}
+
+.SUB_MAIN {
+  width: calc(100% - 230px);
+  height: 100vh;
+  margin-left: 230px;
+  margin-bottom: 120px;
+  position: relative;
+}
+
+.PAGE_TITLE {
+  position: absolute;
+  width: 245px;
+  height: 47px;
+  left: 10px;
+  top: 22px;
+  font-size: 46.2px;
+  font-weight: 400;
+  line-height: 46;
+  display: flex;
+  align-items: center;
+}
+
+#LOGIN_TITLE {
+  position: absolute;
+  width: 69.33px;
+  height: 34px;
+  left: 10px;
+  top: 238px;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+#LOGIN_AREA {
+  position: absolute;
+  height: 238.98px;
+  left: 10px;
+  right: 878.41px;
+  top: 278px;
+  width: 50%;
+}
+
+#LOGIN_ID_LABEL {
+  position: absolute;
+  height: 28px;
+  left: 0px;
+  top: 4px;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+#LOGIN_ID_INPUT {
+  position: absolute;
+  height: 43px;
+  left: 0px;
+  right: 0px;
+  top: 28px;
+  background: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+}
+
+#LOGIN_PW_LABEL {
+  position: absolute;
+  height: 19px;
+  left: 0px;
+  top: 84px;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+#LOGIN_PW_INPUT {
+  position: absolute;
+  height: 43px;
+  left: 0px;
+  right: 0px;
+  top: calc(50% - 43px/2 + 10.01px);
+  background: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+}
+
+#LOGIN_PW_INPUT_ICON {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 94%;
+  top: 123.19px;
+}
+
+#LOGIN_PW_INPUT_ICON:active,
+#LOGIN_PW_INPUT_ICON:visited {
+  background-color: yellow;
+}
+
+#LOGIN_REMEMBER_LABEL {
+  position: absolute;
+  height: 28px;
+  left: 98.27px;
+  top: 172px;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+#LOGIN_REMEMBER_INPUT {
+  box-sizing: border-box;
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  left: 78.64px;
+  top: 179px;
+  background: #FFFFFF;
+  border: 1px solid #767676;
+  border-radius: 2.5px;
+}
+
+#LOGIN_BTN {
+  box-sizing: border-box;
+  position: absolute;
+  width: 60.64px;
+  height: 32.8px;
+  left: 0px;
+  top: 170px;
+  color: white;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  background: #000000;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+#LOGIN_FORGET_LABEL {
+  position: absolute;
+  height: 22px;
+  left: 0px;
+  top: 213.8px;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+#JOIN_TITLE {
+  position: absolute;
+  width: 138.33px;
+  height: 34px;
+  left: 1108.41px;
+  top: 238px;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+#JOIN_AREA {
+  position: absolute;
+  height: 497.17px;
+  left: 1108.41px;
+  right: 10px;
+  top: 278px;
+  width: 50%;
+}

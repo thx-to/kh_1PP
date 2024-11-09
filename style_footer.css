@@ -1,0 +1,58 @@
+
+.FOOTER {
+  position: relative;
+  height: 140px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid black;
+  z-index: 8;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.FOOTER1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 120px;
+  padding: 10px;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Noto Sans KR', 'Arial', sans-serif !important;
+  background-color: white;
+  z-index: 9;  
+}
+
+.FOOTER2 {
+  position: absolute;
+  height: 120px;
+  padding: 10px;
+  bottom: 0;
+  left: 30vw;
+  width: 100%;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Noto Sans KR', 'Arial', sans-serif !important;
+  background-color: white;
+  z-index: 15;
+}
+
+.FOOTER_BTN {
+  position: relative;
+  display: inline-block;
+  left: 0;
+  margin-top: 10px;
+  margin-right: 5px;
+  padding: 0px 5px;
+  text-align: center;
+  color: black;
+  background-color: #f3f3f3;
+  border: 1px solid black;
+  text-align: center;
+  z-index: 10;
+  font-family: 'Nunito', sans-serif;
+}
