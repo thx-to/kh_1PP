@@ -9,6 +9,58 @@
   z-index: 10;
 }
 
+#MENU_OPEN_BUTTON {
+  display: none;
+  position: absolute;
+  left: calc(100vw - 50px);
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 35px;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  z-index: 10;
+}
+
+@media (max-width: 980px) {
+  
+  .open .MENUBAR {
+    display: block;
+    width: 50vw;
+  }
+
+  #MENU_SUB_BACKBOX {
+    width: 50vw;
+  }
+  #MENU_SUB_EXHIBITIONS,
+  #MENU_SUB_PROGRAMS,
+  #MENU_SUB_ARCHIVES,
+  #MENU_SUB_VISIT,
+  #MENU_SUB_ABOUT,
+  #MENU_SUB_NOTICE {
+    width: calc(50vw - 20px);
+  }
+  #MENU_SUB_MYACCOUNT {
+    width: calc(50vw - 10px);
+  }
+  #MENU_LOGO,
+  #MENU_TOP {
+    display: none;
+  }
+  #MENU_SUB {
+    top: -23px;
+    left: 0;
+  }
+  #MENU_TOP_SNS {
+    top: calc(100vh - 45px);
+  }
+  #MENU_OPEN_BUTTON {
+    display: block;
+  }
+}
+
 .MENU_TOP_IMAON {
   width: 209px;
   height: 28px;
@@ -87,9 +139,12 @@
 
 .MENU_TOP_IMAON:hover,
 .MENU_TOP_MEMBERSHIP:hover,
-.MENU_TOP_CE:hover,
-.MENU_TOP_SEARCH:hover {
+.MENU_TOP_CE:hover {
   background-color: yellow;
+}
+
+.MENU_TOP_SEARCH:hover {
+  background-color: black;
 }
 
 .MENU_TOP_SNS {
@@ -222,6 +277,7 @@
   position: absolute;
   background-color: white;
   color: black;
+  font-size: 18.9px;
   font-weight: 400;
   cursor: pointer;
 }
@@ -284,7 +340,7 @@
   font-size: 18px;
   font-weight: 400;
   position: absolute;
-  left: 200px;
+  right: 2px;
   top: 0px;
 }
 

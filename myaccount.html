@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Account - 일민미술관</title>
     <link rel="stylesheet" href="style_menu.css" />
-    <link rel="stylesheet" href="style_index.css" />
-    <link rel="stylesheet" href="style_popup.css" />
-    <link rel="stylesheet" href="style_footer.css" />
     <link rel="stylesheet" href="style_myaccount.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
@@ -16,7 +14,7 @@
 
   <body>
 
-  <div class="PC_CONTAINER_SUB">
+  <div class="CONTAINER_SUB">
     <div class="MENUBAR">
       <img
       class="MENU_LOGO"
@@ -255,9 +253,38 @@
           <div id="LOGIN_REMEMBER_LABEL">기억하기</div>
           <input type="checkbox" id="LOGIN_REMEMBER_INPUT" name="LOGIN_REMEMBER_INPUT">
           <div id="LOGIN_FORGET_LABEL">비밀번호를 잊어버리셨나요?</div>
-        </div>
+        </div> <!-- LOGIN_AREA -->
+        <div id="JOIN_TITLE">회원가입하기</div>
+        <div id="JOIN_AREA">
 
+          <div id="JOIN_LNAME_LABEL">성 <span style="color:red;">&nbsp;*</span></div>
+          <input type="text" id="JOIN_LNAME_INPUT"></input>
+          <div id="JOIN_FNAME_LABEL">이름 <span style="color:red;">&nbsp;*</span></div>
+          <input type="text" id="JOIN_FNAME_INPUT"></input>
+          <div id="JOIN_PHONE_LABEL">전화번호 <span style="color:red;">&nbsp;*</span></div>
+          <input type="number" id="JOIN_PHONE_INPUT"></input>
+          <div id="JOIN_ID_LABEL">아이디 <span style="color:red;">&nbsp;*</span></div>
+          <input type="text" id="JOIN_ID_INPUT"></input>
+          <div id="JOIN_MAIL_LABEL">이메일 주소 <span style="color:red;">&nbsp;*</span></div>
+          <input type="email" id="JOIN_MAIL_INPUT"></input>
+          <div id="JOIN_PW_LABEL">비밀번호 <span style="color:red;">&nbsp;*</span></div>
+          <input type="password" id="JOIN_PW_INPUT"></input>
+          <div id="JOIN_PW_INPUT_ICON">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_99_375)">
+              <path d="M5.19122 8.48682C5.19122 8.9139 5.27456 9.31234 5.44122 9.68213C5.60789 10.0519 5.83706 10.3774 6.12872 10.6587C6.42039 10.9399 6.76154 11.1587 7.15216 11.3149C7.54279 11.4712 7.96206 11.5493 8.40997 11.5493C8.85789 11.5493 9.27716 11.4712 9.66779 11.3149C10.0584 11.1587 10.3996 10.9399 10.6912 10.6587C10.9829 10.3774 11.2121 10.0519 11.3787 9.68213C11.5454 9.31234 11.6287 8.9139 11.6287 8.48682C11.6287 8.12223 11.561 7.77327 11.4256 7.43994C11.2902 7.10661 11.0975 6.80452 10.8475 6.53369C11.6496 6.72119 12.3917 6.96598 13.074 7.26807C13.7563 7.57015 14.3423 7.86702 14.8318 8.15869C15.3214 8.45036 15.7068 8.70036 15.9881 8.90869C16.2693 9.11702 16.41 9.22119 16.41 9.22119V7.79932C16.41 7.79932 16.199 7.64567 15.7772 7.33838C15.3553 7.03109 14.785 6.68994 14.0662 6.31494C13.3475 5.93994 12.5037 5.5988 11.535 5.2915C10.5662 4.98421 9.54018 4.83057 8.45685 4.83057C7.37351 4.83057 6.34487 4.98421 5.37091 5.2915C4.39695 5.5988 3.54279 5.93994 2.80841 6.31494C2.07404 6.68994 1.4907 7.03109 1.05841 7.33838C0.626119 7.64567 0.409973 7.79932 0.409973 7.79932V9.22119C0.409973 9.22119 0.547994 9.11963 0.824036 8.9165C1.10008 8.71338 1.48549 8.46859 1.98029 8.18213C2.47508 7.89567 3.05841 7.6014 3.73029 7.29932C4.40216 6.99723 5.13393 6.74723 5.9256 6.54932C5.69643 6.82015 5.51674 7.11963 5.38654 7.44775C5.25633 7.77588 5.19122 8.12223 5.19122 8.48682Z" fill="black"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_99_375">
+              <rect width="16" height="16" fill="white" transform="matrix(1 0 0 -1 0.409973 16.1899)"/>
+              </clipPath>
+              </defs>
+              </svg>
+          </div>
+          <div id="JOIN_INFO_LABEL">개인 데이터는 이 웹사이트 전체에서 사용자 경험을 지원하고, 사용자 계정에 대한 액세스를 관리하며, 개인정보 보호정책에 설명한 기타 목적을 이행하는 데 사용됩니다.</div>
+          <button type="submit" id="JOIN_BTN" name="JOIN_BTN">회원가입하기</button>
 
+        </div> <!-- JOIN_AREA -->
       </div> <!-- SUB_MAIN -->
 
     </div> <!-- PC_CONTAINER-->

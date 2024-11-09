@@ -9,12 +9,14 @@
   font-family: 'Noto Sans KR', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .PC_CONTAINER_MAIN {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  min-width: 980px;
-  max-width: 1920px;
   height: calc(100vh + 120px);
   position: relative;
   background: white;
@@ -47,8 +49,8 @@
 }
 
 .MAIN_CIRC {
-  width: 100vh;
-  height: 100vh;
+  width: 96vh;
+  height: 96vh;
   border-radius: 100%;
   border: 1px black solid;
   background-repeat: no-repeat;
@@ -90,7 +92,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 50%;
+  width: 40%;
   height: 100%;
   background: white;
   border-left: 1px black solid;
@@ -100,7 +102,7 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  width: 100%;
+  width: calc(100% - 20px);
   min-width: 500px;
   height: calc(100% - 20px);
   border-left: 1px black solid;
@@ -117,7 +119,7 @@
 
 .SLIDES {
   display: flex;
-  width: 100%;
+  width: 600%;
   height: 100%;
   animation: main2 18s infinite;
 }

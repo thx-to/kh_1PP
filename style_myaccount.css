@@ -1,4 +1,4 @@
-.PC_CONTAINER_SUB {
+.CONTAINER_SUB {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -30,6 +30,14 @@
   align-items: center;
 }
 
+input:focus {
+  outline: none;
+  font-family: 'Noto Sans KR';
+}
+input {
+  font-family: 'Noto Sans KR';
+}
+
 #LOGIN_TITLE {
   position: absolute;
   width: 69.33px;
@@ -50,7 +58,6 @@
   position: absolute;
   height: 238.98px;
   left: 10px;
-  right: 878.41px;
   top: 278px;
   width: 50%;
 }
@@ -73,7 +80,7 @@
   position: absolute;
   height: 43px;
   left: 0px;
-  right: 0px;
+  right: 15px;
   top: 28px;
   background: white;
   border-top: none;
@@ -100,7 +107,7 @@
   position: absolute;
   height: 43px;
   left: 0px;
-  right: 0px;
+  right: 15px;
   top: calc(50% - 43px/2 + 10.01px);
   background: white;
   border-top: none;
@@ -111,15 +118,8 @@
 
 #LOGIN_PW_INPUT_ICON {
   position: absolute;
-  width: 16px;
-  height: 16px;
-  left: 94%;
+  right: 3%;
   top: 123.19px;
-}
-
-#LOGIN_PW_INPUT_ICON:active,
-#LOGIN_PW_INPUT_ICON:visited {
-  background-color: yellow;
 }
 
 #LOGIN_REMEMBER_LABEL {
@@ -183,9 +183,8 @@
 
 #JOIN_TITLE {
   position: absolute;
-  width: 138.33px;
   height: 34px;
-  left: 1108.41px;
+  left: calc((100vw - 230px)/2);
   top: 238px;
   font-family: 'Noto Sans KR';
   font-style: normal;
@@ -200,8 +199,221 @@
 #JOIN_AREA {
   position: absolute;
   height: 497.17px;
-  left: 1108.41px;
-  right: 10px;
+  left: calc(((100vw - 230px)/2) + 15px);
+  right: 40px;
   top: 278px;
   width: 50%;
+}
+
+#JOIN_LNAME_LABEL {
+  position: absolute;
+  height: 28px;
+  left: 0px;
+  top: 4px;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 350;
+  font-size: 14px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+#JOIN_LNAME_INPUT {
+  position: absolute;
+  height: 43px;
+  left: 0px;
+  right: calc(50% + 40px);
+  top: 28px;
+  background: #FFFFFF;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+}
+
+#JOIN_FNAME_LABEL {
+  position: absolute;
+  height: 28px;
+  left: calc(50% - 20px);
+  right: 40px;
+  top: 4px;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 350;
+  font-size: 14px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+#JOIN_FNAME_INPUT {
+  position: absolute;
+  height: 43px;
+  left: calc(50% - 20px);
+  right: 40px;
+  top: 28px;
+  background: #FFFFFF;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+}
+
+#JOIN_PHONE_LABEL {
+  position: absolute;
+  height: 28px;
+  left: 0px;
+  right: 40px;
+  top: 84px;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 350;
+  font-size: 14px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+#JOIN_PHONE_INPUT {
+  position: absolute;
+  height: 43px;
+  left: 0px;
+  right: 40px;
+  top: 108px;
+  background: #FFFFFF;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+}
+
+#JOIN_ID_LABEL {
+  position: absolute;
+  height: 28px;
+  left: 0px;
+  right: 40px;
+  top: 164px;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 350;
+  font-size: 14px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+#JOIN_ID_INPUT {
+  position: absolute;
+  height: 43px;
+  left: 0px;
+  right: 40px;
+  top: 188px;
+  background: #FFFFFF;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+}
+
+#JOIN_MAIL_LABEL {
+  position: absolute;
+  height: 28px;
+  left: 0px;
+  right: 40px;
+  top: 244px;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 350;
+  font-size: 14px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+#JOIN_MAIL_INPUT {
+  position: absolute;
+  height: 43px;
+  left: 0px;
+  right: 40px;
+  top: 268px;
+  background: #FFFFFF;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+}
+
+#JOIN_PW_LABEL {
+  position: absolute;
+  height: 28px;
+  left: 0px;
+  right: 40px;
+  top: 324px;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 350;
+  font-size: 14px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+#JOIN_PW_INPUT {
+  position: absolute;
+  height: 43px;
+  left: 0px;
+  right: 40px;
+  top: calc(50% - 43px/2 + 120.91px);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+  background: #FFFFFF;
+}
+
+#JOIN_PW_INPUT_ICON {
+  position: absolute;
+  right: 7%;
+  top: calc(50% - 43px/2 + 136.91px);
+}
+
+#JOIN_INFO_LABEL {
+  position: absolute;
+  height: 22px;
+  left: 0px;
+  top: calc(50% - 43px/2 + 204.91px);
+  right: 40px;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+#JOIN_BTN {
+  box-sizing: border-box;
+  position: absolute;
+  width: 99.28px;
+  height: 32.8px;
+  left: 0px;
+  top: calc(50% - 43px/2 + 264.91px);
+  color: white;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  background: #000000;
+  border: 1px solid #000000;
+  cursor: pointer;
 }
