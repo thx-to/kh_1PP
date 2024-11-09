@@ -52,9 +52,11 @@
   .open .MENUBAR {
     display: block;
     width: 50vw;
+    z-index: 10;
   }
   .open #MENU_SUB {
     top: -23px;
+    z-index: 10;
   }
   .open #MENU_SUB_EXHIBITIONS,
   .open #MENU_SUB_PROGRAMS,
@@ -74,7 +76,7 @@
   .open #MENU_OPEN_BUTTON {
     transform: rotate(45deg);
   }
-  #MENU_LOGO,
+
   #MENU_TOP {
     display: none;
   }
@@ -153,13 +155,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.MENU_TOP_SEARCH > span {
   color: black;
   font-size: 18px;
   font-weight: 400;
   line-height: 1;
-  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
+#MENU_TOP_SEARCH_INPUT {
+  display: none;
+  position: absolute;
+  width: 90%;
+  padding: 2px;
+  color: white;
+  background-color: black; /* input 배경색 */
+}
+
+#MENU_TOP_SEARCH_ICON {
+  display: none;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: 10px;
+  top: 2px;
+  background-image: url("IMG/menu_searchbtn.png");
+}
 .MENU_TOP_IMAON:hover,
 .MENU_TOP_MEMBERSHIP:hover,
 .MENU_TOP_CE:hover {
@@ -168,6 +193,17 @@
 
 .MENU_TOP_SEARCH:hover {
   background-color: black;
+}
+.MENU_TOP_SEARCH:hover #MENU_TOP_SEARCH_INPUT {
+  display: block;
+  background-color: black;
+  color: white;
+}
+.MENU_TOP_SEARCH:hover span {
+  display: none;
+}
+.MENU_TOP_SEARCH:hover #MENU_TOP_SEARCH_ICON {
+  display: block;
 }
 
 .MENU_TOP_SNS {
@@ -255,6 +291,7 @@
   height: 220px;
   left: 10;
   bottom: 0;
+  z-index: 12;
 }
 
 .MENU_SUB_BACKBOX {
@@ -264,6 +301,7 @@
   bottom: 0;
   position: fixed;
   background: white;
+  z-index: 12;
 }
 
 .MENU_SUB_EXHIBITIONS {
@@ -277,6 +315,7 @@
   font-size: 18.9px;
   font-weight: 400;
   cursor: pointer;
+  z-index: 12;
 }
 
 .MENU_SUB_PROGRAMS {
@@ -290,6 +329,7 @@
   font-size: 18.9px;
   font-weight: 400;
   cursor: pointer;
+  z-index: 12;
 }
 
 .MENU_SUB_ARCHIVES {
@@ -303,6 +343,7 @@
   font-size: 18.9px;
   font-weight: 400;
   cursor: pointer;
+  z-index: 12;
 }
 
 .MENU_SUB_VISIT {
@@ -316,6 +357,7 @@
   font-size: 18.9px;
   font-weight: 400;
   cursor: pointer;
+  z-index: 12;
 }
 
 .MENU_SUB_ABOUT {
@@ -329,6 +371,7 @@
   font-size: 18.9px;
   font-weight: 400;
   cursor: pointer;
+  z-index: 12;
 }
 
 .MENU_SUB_NOTICE {
@@ -342,6 +385,7 @@
   font-size: 18.9px;
   font-weight: 400;
   cursor: pointer;
+  z-index: 12;
 }
 
 .MENU_SUB_MYACCOUNT {
@@ -359,6 +403,7 @@
   cursor: pointer;
   align-items: center;
   line-height: 35px;
+  z-index: 12;
 }
 
 .MENU_SUB_MORE {
@@ -367,6 +412,7 @@
   position: absolute;
   right: 2px;
   top: 0px;
+  z-index: 12;
 }
 
 .MENU_SUB_EXHIBITIONS:hover,

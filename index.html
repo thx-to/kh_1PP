@@ -19,30 +19,22 @@
 
   <body>
     <div class="CONTAINER_MAIN">
+      <div class="LOGO"></div>
       <div id="MENU_OPEN_BUTTON_BOX">
         <button id="MENU_OPEN_BUTTON">+</button>
       </div>
 
       <div class="MENUBAR" id="MENUBAR">
-        <img
-          class="MENU_LOGO"
-          style="
-            width: 185px;
-            height: 143px;
-            left: 22px;
-            top: 27px;
-            position: absolute;
-            cursor: pointer;
-          "
-          src="IMG/menu_logo.png"
-          onclick="location.href='index.html'"
-          id="MENU_LOGO"
-        />
+
         <div class="MENU_TOP" id="MENU_TOP">
           <div class="MENU_TOP_IMAON">IMA ON</div>
           <div class="MENU_TOP_MEMBERSHIP">Membership</div>
           <div class="MENU_TOP_CE">Current exhibitions</div>
-          <div class="MENU_TOP_SEARCH">Search</div>
+          <div class="MENU_TOP_SEARCH">
+            <input type="text" id="MENU_TOP_SEARCH_INPUT">
+            <span>Search</span></input>
+            <div id="MENU_TOP_SEARCH_ICON"></div>
+          </div>
         </div>
         <div class="MENU_TOP_SNS" id="MENU_TOP_SNS">
           <div
