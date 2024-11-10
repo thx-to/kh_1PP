@@ -33,7 +33,7 @@ body {
     height: 143px;
     position: fixed;
     cursor: pointer;
-    background-image: url("IMG/menu_logo.png");
+    background-image: url("ILMIN_IMG/main_logo.png");
     background-size: cover;
     background-position: center;
     z-index: 11;
@@ -79,19 +79,19 @@ body {
 
   @keyframes main1 {
     0% {
-      background-image: url("IMG/main1_img1.jpg");
+      background-image: url("ILMIN_IMG/main1_img1.jpg");
       opacity: 1;
     }
     33.33% {
-      background-image: url("IMG/main1_img2.jpg");
+      background-image: url("ILMIN_IMG/main1_img2.jpg");
       opacity: 1;
     }
     66.66% {
-      background-image: url("IMG/main1_img3.jpg");
+      background-image: url("ILMIN_IMG/main1_img3.jpg");
       opacity: 1;
     }
     100% {
-      background-image: url("IMG/main1_img1.jpg");
+      background-image: url("ILMIN_IMG/main1_img1.jpg");
       opacity: 1;
     }
   }
@@ -147,12 +147,12 @@ body {
     background-position: center;
   }
   
-  .SLIDE:nth-child(1) {background-image: url("IMG/main2_img1.jpg");}
-  .SLIDE:nth-child(2) {background-image: url("IMG/main2_img2.jpg");}
-  .SLIDE:nth-child(3) {background-image: url("IMG/main2_img3.jpg");}
-  .SLIDE:nth-child(4) {background-image: url("IMG/main2_img4.jpg");}
-  .SLIDE:nth-child(5) {background-image: url("IMG/main2_img5.jpg");}
-  .SLIDE:nth-child(6) {background-image: url("IMG/main2_img6.jpg");}
+  .SLIDE:nth-child(1) {background-image: url("ILMIN_IMG/main2_img1.jpg");}
+  .SLIDE:nth-child(2) {background-image: url("ILMIN_IMG/main2_img2.jpg");}
+  .SLIDE:nth-child(3) {background-image: url("ILMIN_IMG/main2_img3.jpg");}
+  .SLIDE:nth-child(4) {background-image: url("ILMIN_IMG/main2_img4.jpg");}
+  .SLIDE:nth-child(5) {background-image: url("ILMIN_IMG/main2_img5.jpg");}
+  .SLIDE:nth-child(6) {background-image: url("ILMIN_IMG/main2_img6.jpg");}
   
   @keyframes main2 {
     0% {transform: translateX(0);}
@@ -182,7 +182,7 @@ body {
     height: 45px;
     position: fixed;
     cursor: pointer;
-    background-image: url("IMG/menu_logo_t.png");
+    background-image: url("ILMIN_IMG/main_logo_t.png");
     background-size: 100%;
     background-position: left;
     background-repeat: no-repeat;
@@ -225,19 +225,19 @@ body {
   }
   @keyframes main1 {
     0% {
-      background-image: url("IMG/main1_img1.jpg");
+      background-image: url("ILMIN_IMG/main1_img1.jpg");
       opacity: 1;
     }
     33.33% {
-      background-image: url("IMG/main1_img2.jpg");
+      background-image: url("ILMIN_IMG/main1_img2.jpg");
       opacity: 1;
     }
     66.66% {
-      background-image: url("IMG/main1_img3.jpg");
+      background-image: url("ILMIN_IMG/main1_img3.jpg");
       opacity: 1;
     }
     100% {
-      background-image: url("IMG/main1_img1.jpg");
+      background-image: url("ILMIN_IMG/main1_img1.jpg");
       opacity: 1;
     }
   }
@@ -284,12 +284,12 @@ body {
     background-size: cover;
     background-position: center;
   }
-  .SLIDE:nth-child(1) {background-image: url("IMG/main2_img1.jpg");}
-  .SLIDE:nth-child(2) {background-image: url("IMG/main2_img2.jpg");}
-  .SLIDE:nth-child(3) {background-image: url("IMG/main2_img3.jpg");}
-  .SLIDE:nth-child(4) {background-image: url("IMG/main2_img4.jpg");}
-  .SLIDE:nth-child(5) {background-image: url("IMG/main2_img5.jpg");}
-  .SLIDE:nth-child(6) {background-image: url("IMG/main2_img6.jpg");}
+  .SLIDE:nth-child(1) {background-image: url("ILMIN_IMG/main2_img1.jpg");}
+  .SLIDE:nth-child(2) {background-image: url("ILMIN_IMG/main2_img2.jpg");}
+  .SLIDE:nth-child(3) {background-image: url("ILMIN_IMG/main2_img3.jpg");}
+  .SLIDE:nth-child(4) {background-image: url("ILMIN_IMG/main2_img4.jpg");}
+  .SLIDE:nth-child(5) {background-image: url("ILMIN_IMG/main2_img5.jpg");}
+  .SLIDE:nth-child(6) {background-image: url("ILMIN_IMG/main2_img6.jpg");}
   @keyframes main2 {
     0% {transform: translateX(0);}
     16.67% {transform: translateX(-488px);}
@@ -348,19 +348,19 @@ body {
   }
   @keyframes main1 {
     0% {
-      background-image: url("IMG/main1_img1.jpg");
+      background-image: url("ILMIN_IMG/main1_img1.jpg");
       opacity: 1;
     }
     33.33% {
-      background-image: url("IMG/main1_img2.jpg");
+      background-image: url("ILMIN_IMG/main1_img2.jpg");
       opacity: 1;
     }
     66.66% {
-      background-image: url("IMG/main1_img3.jpg");
+      background-image: url("ILMIN_IMG/main1_img3.jpg");
       opacity: 1;
     }
     100% {
-      background-image: url("IMG/main1_img1.jpg");
+      background-image: url("ILMIN_IMG/main1_img1.jpg");
       opacity: 1;
     }
   }
@@ -416,12 +416,12 @@ body {
     background-size: cover;
     background-position: center;
   }
-  .SLIDE:nth-child(1) {background-image: url("IMG/main2_img1.jpg");}
-  .SLIDE:nth-child(2) {background-image: url("IMG/main2_img2.jpg");}
-  .SLIDE:nth-child(3) {background-image: url("IMG/main2_img3.jpg");}
-  .SLIDE:nth-child(4) {background-image: url("IMG/main2_img4.jpg");}
-  .SLIDE:nth-child(5) {background-image: url("IMG/main2_img5.jpg");}
-  .SLIDE:nth-child(6) {background-image: url("IMG/main2_img6.jpg");}
+  .SLIDE:nth-child(1) {background-image: url("ILMIN_IMG/main2_img1.jpg");}
+  .SLIDE:nth-child(2) {background-image: url("ILMIN_IMG/main2_img2.jpg");}
+  .SLIDE:nth-child(3) {background-image: url("ILMIN_IMG/main2_img3.jpg");}
+  .SLIDE:nth-child(4) {background-image: url("ILMIN_IMG/main2_img4.jpg");}
+  .SLIDE:nth-child(5) {background-image: url("ILMIN_IMG/main2_img5.jpg");}
+  .SLIDE:nth-child(6) {background-image: url("ILMIN_IMG/main2_img6.jpg");}
   @keyframes main2 {
     0% {transform: translateX(0);}
     16.67% {transform: translateX(-488px);}
@@ -443,7 +443,7 @@ body {
     height: 45px;
     position: fixed;
     cursor: pointer;
-    background-image: url("IMG/menu_logo_m.png");
+    background-image: url("ILMIN_IMG/main_logo_m.png");
     background-size: 100%;
     background-position: left;
     background-repeat: no-repeat;

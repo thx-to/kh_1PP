@@ -33,7 +33,7 @@
   height: 20px;
   border-radius: 50%;
   background-color: yellow;
-  background-image: url("IMG/popup_close.png");
+  background-image: url("ILMIN_IMG/popup_close.png");
   background-size: 12px 12px;
   background-position: center;
   background-repeat: no-repeat;
@@ -46,7 +46,7 @@
 #POPUP2:hover > .POPUP_CLOSE,
 #POPUP3:hover > .POPUP_CLOSE {
   background-color: black;
-  background-image: url("IMG/popup_close_w.png");
+  background-image: url("ILMIN_IMG/popup_close_w.png");
 }
 
 .POPUP_TITLE {

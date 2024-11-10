@@ -18,7 +18,7 @@
   right: 10%;
   top: 2.5%;
   bottom: 84.26%;
-  background: url('IMG/menu_logo.png');
+  background: url('ILMIN_IMG/menu_logo.png');
   background-size: 185px 143px;
 }
 
@@ -110,21 +110,21 @@
 }
 
 .menu_sns_instagram {
-  background-image: url('IMG/menu_sns_instagram.svg?');
+  background-image: url('ILMIN_IMG/menu_sns_instagram.svg?');
 }
 
 .menu_sns_twitter {
-  background-image: url('IMG/menu_sns_twitter.svg');
+  background-image: url('ILMIN_IMG/menu_sns_twitter.svg');
 }
 
 .menu_sns_youtube {
-  background-image: url('IMG/menu_sns_youtube.svg');
+  background-image: url('ILMIN_IMG/menu_sns_youtube.svg');
 }
 
 .menu_sns_store {
-  background-image: url('IMG/menu_sns_store.svg');
+  background-image: url('ILMIN_IMG/menu_sns_store.svg');
 }
 
 .menu_sns_mail {
-  background-image: url('IMG/menu_sns_mail.svg');
+  background-image: url('ILMIN_IMG/menu_sns_mail.svg');
 }
