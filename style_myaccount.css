@@ -1,21 +1,4 @@
-.CONTAINER_SUB {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  min-width: 980px;
-  max-width: 1920px;
-  height: 100vh;
-  position: relative;
-  background: white;
-}
-
-.SUB_MAIN {
-  width: calc(100% - 230px);
-  height: 100vh;
-  margin-left: 230px;
-  margin-bottom: 120px;
-  position: relative;
-}
+/* myaccount 미디어쿼리 : 980 769 */
 
 .PAGE_TITLE {
   position: absolute;
@@ -30,20 +13,12 @@
   align-items: center;
 }
 
-input:focus {
-  outline: none;
-  font-family: 'Noto Sans KR';
-}
-input {
-  font-family: 'Noto Sans KR';
-}
-
 #LOGIN_TITLE {
   position: absolute;
-  width: 69.33px;
+  width: calc(((100vw - 230px) / 2) - 10px);
   height: 34px;
   left: 10px;
-  top: 238px;
+  top: 225px;
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
@@ -58,8 +33,8 @@ input {
   position: absolute;
   height: 238.98px;
   left: 10px;
-  top: 278px;
-  width: 50%;
+  top: 265px;
+  width: calc(((100vw - 230px) / 2) - 10px);
 }
 
 #LOGIN_ID_LABEL {
@@ -118,8 +93,8 @@ input {
 
 #LOGIN_PW_INPUT_ICON {
   position: absolute;
-  right: 3%;
-  top: 123.19px;
+  right: 25px;
+  top: 121.5px;
 }
 
 #LOGIN_REMEMBER_LABEL {
@@ -173,7 +148,7 @@ input {
   top: 213.8px;
   font-family: 'Noto Sans KR';
   font-style: normal;
-  font-weight: 350;
+  font-weight: 400;
   font-size: 16px;
   line-height: 27px;
   display: flex;
@@ -185,7 +160,8 @@ input {
   position: absolute;
   height: 34px;
   left: calc((100vw - 230px)/2);
-  top: 238px;
+  right: 10px;
+  top: 225px;
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
@@ -194,15 +170,17 @@ input {
   display: flex;
   align-items: center;
   color: black;
+  width: calc(((100vw - 230px) / 2) - 10px);
 }
 
 #JOIN_AREA {
   position: absolute;
   height: 497.17px;
-  left: calc(((100vw - 230px)/2) + 15px);
-  right: 40px;
-  top: 278px;
-  width: 50%;
+  left: calc(((100vw - 230px)/2));
+  right: 10px;
+  top: 265px;
+  width: calc(((100vw - 230px) / 2) - 10px);
+  padding-bottom: 160px;
 }
 
 #JOIN_LNAME_LABEL {
@@ -216,7 +194,7 @@ input {
   font-size: 14px;
   line-height: 28px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   color: #000000;
 }
 
@@ -253,7 +231,7 @@ input {
   position: absolute;
   height: 43px;
   left: calc(50% - 20px);
-  right: 40px;
+  right: 30px;
   top: 28px;
   background: #FFFFFF;
   border-top: none;
@@ -266,7 +244,7 @@ input {
   position: absolute;
   height: 28px;
   left: 0px;
-  right: 40px;
+  right: 10px;
   top: 84px;
   font-family: 'Noto Sans KR';
   font-style: normal;
@@ -282,7 +260,7 @@ input {
   position: absolute;
   height: 43px;
   left: 0px;
-  right: 40px;
+  right: 30px;
   top: 108px;
   background: #FFFFFF;
   border-top: none;
@@ -311,7 +289,7 @@ input {
   position: absolute;
   height: 43px;
   left: 0px;
-  right: 40px;
+  right: 30px;
   top: 188px;
   background: #FFFFFF;
   border-top: none;
@@ -340,7 +318,7 @@ input {
   position: absolute;
   height: 43px;
   left: 0px;
-  right: 40px;
+  right: 30px;
   top: 268px;
   background: #FFFFFF;
   border-top: none;
@@ -353,7 +331,7 @@ input {
   position: absolute;
   height: 28px;
   left: 0px;
-  right: 40px;
+  right: 30px;
   top: 324px;
   font-family: 'Noto Sans KR';
   font-style: normal;
@@ -369,8 +347,8 @@ input {
   position: absolute;
   height: 43px;
   left: 0px;
-  right: 40px;
-  top: calc(50% - 43px/2 + 120.91px);
+  right: 30px;
+  top: 348px;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -380,24 +358,26 @@ input {
 
 #JOIN_PW_INPUT_ICON {
   position: absolute;
-  right: 7%;
-  top: calc(50% - 43px/2 + 136.91px);
+  right: 40px;
+  top: 362px;
 }
 
 #JOIN_INFO_LABEL {
   position: absolute;
-  height: 22px;
+  height: auto;
   left: 0px;
-  top: calc(50% - 43px/2 + 204.91px);
+  top: calc(50% - 43px/2 + 85px);
   right: 40px;
   font-family: 'Noto Sans KR';
   font-style: normal;
-  font-weight: 350;
+  font-weight: 400;
   font-size: 16px;
   line-height: 27px;
   display: flex;
   align-items: center;
   color: #000000;
+  word-wrap: break-word;
+  margin-bottom: 10px;
 }
 
 #JOIN_BTN {
@@ -406,7 +386,7 @@ input {
   width: 99.28px;
   height: 32.8px;
   left: 0px;
-  top: calc(50% - 43px/2 + 264.91px);
+  top: calc(50% - 43px / 2 + 140px + 43px);
   color: white;
   font-family: 'Noto Sans KR';
   font-style: normal;
@@ -417,3 +397,87 @@ input {
   border: 1px solid #000000;
   cursor: pointer;
 }
+
+input:focus {
+  outline: none;
+  font-family: 'Noto Sans KR';
+}
+input {
+  font-family: 'Noto Sans KR';
+}
+
+/* 980부터 TAB */
+@media (max-width: 980px) {
+
+  .PAGE_TITLE {
+    left: 10px;
+    top: 110px;
+    font-size: 34.65px;
+  }
+  
+  #LOGIN_TITLE {
+    left: 10px;
+  }
+  
+  #LOGIN_AREA {
+    left: 10px;
+    width: 50%;
+  }
+
+  #LOGIN_FORGET_LABEL {
+    font-size: 15px;
+  }
+  
+  #JOIN_TITLE {
+    left: calc((50vw + 10px));
+  }
+
+  #JOIN_AREA {
+    left: calc(50vw + 10px);
+    right: 10px;
+    width: 50%;
+  }
+
+  #JOIN_INFO_LABEL {
+    font-size: 15px;
+  }
+
+}
+
+/* 769부터 세로 레이아웃 */
+@media (max-width: 769px) {
+
+  #LOGIN_TITLE {
+    left: 10px;
+    width: 100vw;
+  }
+  
+  #LOGIN_AREA {
+    width: 100%;
+    margin-right: 200px;
+  }
+
+  #LOGIN_ID_INPUT,
+  #LOGIN_PW_INPUT {
+    right: 30px;
+  }
+  
+  #JOIN_TITLE {
+    top: 550px;
+    left: 10px;
+    width: 100%;
+  }
+
+  #JOIN_AREA {
+    top: 590px;
+    left: 10px;
+    right: 10px;
+    width: 100%;
+  }
+
+  #JOIN_INFO_LABEL {
+    font-size: 15px;
+  }
+
+}
+
