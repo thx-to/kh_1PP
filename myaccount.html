@@ -24,16 +24,16 @@
 
     <div class="LOGO" onclick="location.href='index.html'"></div>
     <div id="MENU_OPEN_BUTTON_BOX">
-      <button id="MENU_OPEN_BUTTON">+</button>
+      <div id="MENU_OPEN_BUTTON">+</div>
     </div>
 
     <div class="MENUBAR" id="MENUBAR">
 
       <div class="MENU_TOP" id="MENU_TOP">
-        <div class="MENU_TOP_IMAON">IMA ON</div>
-        <div class="MENU_TOP_MEMBERSHIP">Membership</div>
-        <div class="MENU_TOP_CE">Current exhibitions</div>
-        <div class="MENU_TOP_SEARCH">
+        <div class="MENU_TOP_IMAON" id="MENU_TOP_IMAON">IMA ON</div>
+        <div class="MENU_TOP_MEMBERSHIP" id="MENU_TOP_MEMBERSHIP">Membership</div>
+        <div class="MENU_TOP_CE" id="MENU_TOP_CE">Current exhibitions</div>
+        <div class="MENU_TOP_SEARCH" id="MENU_TOP_SEARCH">
           <input type="text" id="MENU_TOP_SEARCH_INPUT">
           <span>Search</span></input>
           <div id="MENU_TOP_SEARCH_ICON"></div>
@@ -319,19 +319,17 @@
     </div> <!-- CONTAINER_MAIN-->
 
     <script>
-
-      document.getElementById("MENU_OPEN_BUTTON").addEventListener("click", function () {
-        // open 클래스를 body에 토글하여 메뉴 열기/닫기
+      document.getElementById("MENU_OPEN_BUTTON").addEventListener("click", function() {
+        // 메뉴 열기/닫기 토글
         document.body.classList.toggle("open");
 
-        // 버튼 텍스트 설정
+        // 메뉴가 열린 상태에서 버튼도 클릭 가능하게 설정
         if (document.body.classList.contains("open")) {
-          this.style.transform = "rotate(45deg)"; // 열렸을 때 X 형태로 회전
+          document.getElementById("MENU_OPEN_BUTTON").style.pointerEvents = 'auto'; // 메뉴가 열린 상태에서는 클릭 가능
         } else {
-          this.style.transform = "rotate(0deg)";   // 닫혔을 때 + 형태로 복구
+          document.getElementById("MENU_OPEN_BUTTON").style.pointerEvents = 'auto'; // 메뉴가 닫힌 상태에서도 클릭 가능
         }
       });
-
     </script>
 
   </body>
